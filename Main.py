@@ -1,12 +1,10 @@
 import re
 
 def display_hash(hashtable) -> None:
-	for i in range (len(HashTable)):
-		print(i,"-->")
-		for j in range(len(HashTable)):
-			if Hashing(HashTable[j][0])==i:
-				str=str+HashTable[j][1]+"-->"
-		print(str[0:len(str)-3])                
+	for i in range(len(hashtable)):
+		print(i, end=" ")
+		for j in hashtable[i]:
+			print("-->", j, end=" ")
 		print()
 		
 
