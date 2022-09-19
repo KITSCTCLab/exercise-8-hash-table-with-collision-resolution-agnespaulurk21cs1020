@@ -7,16 +7,14 @@ def display_hash(hashtable) -> None:
 			if Hashing(HashTable[j][0])==i:
 				str=str+HashTable[j][1]+"-->"
 		print(str[0:len(str)-3])                
-		
+		print()
 		
 
 def Hashing(keyvalue) -> int:
 	return keyvalue % len(HashTable)
 
 def insert(Hashtable, keyvalue, value) -> None:
-	for i in range(len(HashTable)):
-		HashTable[0]=keyvalue
-		HashTable[1]=value
+	Hashtable[keyvalue % len(Hashtable)].append(value)
 		      
 # Do not edit the following code
 hash_table_size = int(input())
