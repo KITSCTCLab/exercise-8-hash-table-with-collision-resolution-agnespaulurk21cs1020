@@ -15,8 +15,8 @@ def Hashing(keyvalue) -> int:
 
 def insert(Hashtable, keyvalue, value) -> None:
 	for i in range(len(HashTable)):
-		HashTable[i][0]=keyvalue
-		HashTable[i][1]=value
+		HashTable[0]=keyvalue
+		HashTable[1]=value
 		      
 # Do not edit the following code
 hash_table_size = int(input())
